@@ -99,7 +99,7 @@ const DEFAULT_SENTENCES: SentencePair[] = [
   {
     id: "1762817688756",
     english: "My phone number is [p = phonenumber.selectOne]",
-    korean: "전화번호는[p = phonenumber.selectOne]에요",
+    korean: "전화번호는 [p = phonenumber.selectOne]에요",
   },
   {
     id: "1762827973241",
@@ -160,7 +160,7 @@ const DEFAULT_SENTENCES: SentencePair[] = [
   {
     id: "1762749775322",
     english: "This is a [p = objectsubjectparticle.selectOne]",
-    korean: "이것은  [p = objectsubjectparticle.selectOne]에요",
+    korean: "이것은 [p = objectsubjectparticle.selectOne]에요",
   },
   {
     id: "1762749828766",
@@ -265,7 +265,7 @@ const DEFAULT_SENTENCES: SentencePair[] = [
   {
     id: "1762831608580",
     english: "[p = itemswithcounter.selectOne] and [p = itemswithcounter.selectOne] please",
-    korean: "[p = itemswithcounter.selectOne] 하고 [p = itemswithcounter.selectOne]  주세요",
+    korean: "[p = itemswithcounter.selectOne] 하고 [p = itemswithcounter.selectOne] 주세요",
   },
   {
     id: "1762827723352",
@@ -277,7 +277,7 @@ const DEFAULT_SENTENCES: SentencePair[] = [
     english:
       "The [p = objectsubjectparticle.selectOne] is [p = placement.selectOne] the [p = objectsnoparticle.selectOne]",
     korean:
-      "[p = objectsubjectparticle.selectOne]  [p = objectsnoparticle.selectOne] [p = placement.selectOne]에 있어요",
+      "[p = objectsubjectparticle.selectOne] [p = placement.selectOne] [p = objectsnoparticle.selectOne] 있어요",
     hint: "subject – object – verb",
     showHint: true,
   },
@@ -316,12 +316,12 @@ const DEFAULT_SENTENCES: SentencePair[] = [
   {
     id: "1762841654835",
     english: "I like drinking [p = liquidobjectmarker.selectOne]",
-    korean: "저는 [p = liquidobjectmarker.selectOne]  마시어요",
+    korean: "저는 [p = liquidobjectmarker.selectOne] 마시어요",
   },
   {
     id: "1762844191342",
     english:
-      "The [p = objectsnoparticle.selectOne] are on the [p = placement2.selectOne] of the [p = objectsubjectparticle.selectOne]",
+      "The [p = objectsnoparticle.selectOne] is on the [p = placement2.selectOne] of the [p = objectsubjectparticle.selectOne]",
     korean:
       "[p = objectsnoparticle.selectOne] [p = placement2.selectOne]에 [p = objectsubjectparticle.selectOne] 있어요.",
   },
@@ -375,7 +375,7 @@ const DEFAULT_SENTENCES: SentencePair[] = [
   {
     id: "1762922372789",
     english: "I [p = frequency.selectOne] drink [p = liquidobjectmarker.selectOne]",
-    korean: "[p = liquidobjectmarker.selectOne] 마셔요 [p = frequency.selectOne]",
+    korean: "[p = liquidobjectmarker.selectOne] [p = frequency.selectOne] 마셔요",
     hint: "",
     showHint: true,
   },
@@ -431,7 +431,7 @@ const DEFAULT_KEYWORDS: KeywordList[] = [
       { english: "Jessica", korean: "제시카" },
       { english: "Jane", korean: "제인이" },
       { english: "Rebecca", korean: "레베카" },
-      { english: "Mabel", korean: "메이브" },
+      { english: "Mauve", korean: "메이브" },
     ],
   },
   {
@@ -439,7 +439,7 @@ const DEFAULT_KEYWORDS: KeywordList[] = [
     name: "job",
     options: [
       { english: "Police Officer", korean: "경찰이" },
-      { english: "office employee", korean: "회사원 " },
+      { english: "office employee", korean: "회사원이 " },
       { english: "doctor", korean: "의사" },
       { english: "chef", korean: "요리사 " },
       { english: "housewife", korean: " 주부" },
@@ -641,7 +641,7 @@ const DEFAULT_KEYWORDS: KeywordList[] = [
     name: "objectsnoparticle",
     options: [
       { english: "computer ", korean: "컴퓨터" },
-      { english: "book ", korean: "책상" },
+      { english: "book ", korean: "책" },
       { english: "bed ", korean: "침대" },
       { english: "glasses", korean: "안경" },
       { english: "shoes", korean: "구두" },
@@ -676,7 +676,7 @@ const DEFAULT_KEYWORDS: KeywordList[] = [
     options: [
       { english: "coffee", korean: " 커피를" },
       { english: "soju", korean: "소주를" },
-      { english: "juice", korean: "맥주를" },
+      { english: "beer", korean: "맥주를" },
       { english: "water", korean: "물을" },
     ],
   },
