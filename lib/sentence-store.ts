@@ -79,7 +79,7 @@ const DEFAULT_SENTENCES: SentencePair[] = [
   {
     id: "1762836472059",
     english: "Are you a [p = job.selectOne]?",
-    korean: "[p = job.selectOne]에요",
+    korean: "[p = job.selectOne]에요?",
   },
   {
     id: "1762748888578",
@@ -170,7 +170,7 @@ const DEFAULT_SENTENCES: SentencePair[] = [
   {
     id: "1762822536973",
     english: "That (over there) is a [p = objectsubjectparticle.selectOne]",
-    korean: "저것은 [p = objectsubjectparticle.selectOne]",
+    korean: "저것은 [p = objectsubjectparticle.selectOne]예요",
   },
   {
     id: "1762754538641",
@@ -315,13 +315,13 @@ const DEFAULT_SENTENCES: SentencePair[] = [
   },
   {
     id: "1762841654835",
-    english: "I like drinking [p = liquidobjectmarker.selectOne]",
+    english: "I drink [p = liquidobjectmarker.selectOne]",
     korean: "저는 [p = liquidobjectmarker.selectOne] 마시어요",
   },
   {
     id: "1762844191342",
     english:
-      "The [p = objectsnoparticle.selectOne] is on the [p = placement2.selectOne] of the [p = objectsubjectparticle.selectOne]",
+      "The [p = objectsnoparticle.selectOne] are on the [p = placement2.selectOne] of the [p = objectsubjectparticle.selectOne]",
     korean:
       "[p = objectsnoparticle.selectOne] [p = placement2.selectOne]에 [p = objectsubjectparticle.selectOne] 있어요.",
   },
@@ -389,7 +389,7 @@ const DEFAULT_SENTENCES: SentencePair[] = [
   {
       id: "1762924097645",
     english: "[p = name.selectOne] is at the [p = places.selectOne]",
-    korean: "p = name.selectOne][p = places.selectOne]예 있어요",
+    korean: "[p = name.selectOne][p = places.selectOne]예 있어요",
     hint: "",
     showHint: true,
   },
@@ -402,13 +402,13 @@ const DEFAULT_SENTENCES: SentencePair[] = [
   },
   {
       id: "1762724097645",
-    english: "The [p = placesmarker.selectOne] is on the floor",
-    korean: "[p = sinonumber.selectOne] 층예 있어요",
+    english: "It's on the [p = sinonumberfloor.selectOne] floor",
+    korean: "[p = sinonumberfloor.selectOne] 층예 있어요",
     hint: "",
     showHint: true,
   },
   {
-      id: "17482724097645",
+      id: "174827424097645",
     english: "The [p = places.selectOne] is near the [p = placesmarker.selectOne]",
     korean: "[p = places.selectOne] 근처에 [p = placesmarker.selectOne] 있어요",
     hint: "",
@@ -422,7 +422,7 @@ const DEFAULT_SENTENCES: SentencePair[] = [
     showHint: true,
   },
   {
-    id: "1762922372789",
+    id: "17642922372789",
     english: "I [p = frequency.selectOne] drink [p = liquidobjectmarker.selectOne]",
     korean: "[p = liquidobjectmarker.selectOne] [p = frequency.selectOne] 마셔요",
     hint: "",
@@ -488,10 +488,10 @@ const DEFAULT_KEYWORDS: KeywordList[] = [
     name: "job",
     options: [
       { english: "Police Officer", korean: "경찰이" },
-      { english: "office employee", korean: "회사원이 " },
+      { english: "office employee", korean: "회사원이" },
       { english: "doctor", korean: "의사" },
-      { english: "chef", korean: "요리사 " },
-      { english: "housewife", korean: " 주부" },
+      { english: "chef", korean: "요리사" },
+      { english: "housewife", korean: "주부" },
       { english: "nurse", korean: "간호사" },
       { english: "actor", korean: "배우" },
     ],
@@ -501,10 +501,10 @@ const DEFAULT_KEYWORDS: KeywordList[] = [
     name: "places",
     options: [
       { english: "school", korean: "학교" },
-      { english: "Restaurant ", korean: "식당" },
+      { english: "restaurant", korean: "식당" },
       { english: "pub", korean: "술집" },
-      { english: "karaoke ", korean: "노래방" },
-      { english: "internet cafe ", korean: "피시방" },
+      { english: "karaoke bar", korean: "노래방" },
+      { english: "internet cafe", korean: "피시방" },
     ],
   },
   {
@@ -643,6 +643,18 @@ const DEFAULT_KEYWORDS: KeywordList[] = [
       { english: "eight", korean: "팔" },
       { english: "nine", korean: "구 " },
       { english: "ten", korean: "십" },
+    ],
+  },
+    {
+    id: "sinonumberfloor",
+    name: "sinonumberfloor",
+    options: [
+      { english: "first", korean: "일" },
+      { english: "second", korean: "이" },
+      { english: "third", korean: "삼" },
+      { english: "fourth", korean: "사" },
+      { english: "fifth", korean: "오" },
+      { english: "sixth", korean: "육" },
     ],
   },
   {
@@ -819,9 +831,9 @@ const DEFAULT_KEYWORDS: KeywordList[] = [
     name: "placesmarker",
     options: [
       { english: "school", korean: "학교가" },
-      { english: "Restaurant ", korean: "식당이" },
+      { english: "restaurant", korean: "식당이" },
       { english: "pub", korean: "술집이" },
-      { english: "internet cafe ", korean: "피시방이" },
+      { english: "internet cafe", korean: "피시방이" },
     ],
   },
 ];
