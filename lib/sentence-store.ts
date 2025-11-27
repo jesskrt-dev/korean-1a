@@ -141,7 +141,7 @@ const DEFAULT_SENTENCES: SentencePair[] = [
   {
     id: "1762754130412",
     english: "[p = name.selectOne], what is this?",
-    korean: "[p = name.selectOne] 씨, 이것은 뭐예요?",
+    korean: "[p = name.selectOne] 씨는, 이것은 뭐예요?",
   },
   {
     id: "1762749713830",
@@ -175,7 +175,7 @@ const DEFAULT_SENTENCES: SentencePair[] = [
   {
     id: "1762754538641",
     english: "[p = name.selectOne], is this a [p = objectsubjectparticle.selectOne]?",
-    korean: "[p = name.selectOne] 씨, 이것은 [p = objectsubjectparticle.selectOne]예요?",
+    korean: "[p = name.selectOne] 씨는, 이것은 [p = objectsubjectparticle.selectOne]예요?",
   },
   {
     id: "1762815973880",
@@ -264,8 +264,8 @@ const DEFAULT_SENTENCES: SentencePair[] = [
   },
   {
     id: "1762831608580",
-    english: "[p = itemswithcounter.selectOne] and [p = itemswithcounter.selectOne] please",
-    korean: "[p = itemswithcounter.selectOne] 하고 [p = itemswithcounter.selectOne] 주세요",
+    english: "[p = itemswithcounter.selectOne] and [p = itemswithcounter2.selectOne] please",
+    korean: "[p = itemswithcounter.selectOne] 하고 [p = itemswithcounter2.selectOne] 주세요",
   },
   {
     id: "1762827723352",
@@ -389,7 +389,7 @@ const DEFAULT_SENTENCES: SentencePair[] = [
   {
       id: "1762924097645",
     english: "[p = name.selectOne] is at the [p = places.selectOne]",
-    korean: "[p = name.selectOne][p = places.selectOne]예 있어요",
+    korean: "[p = name.selectOne] [p = places.selectOne]예 있어요",
     hint: "",
     showHint: true,
   },
@@ -565,7 +565,7 @@ const DEFAULT_KEYWORDS: KeywordList[] = [
     id: "fruit",
     name: "fruit",
     options: [
-      { english: "banana", korean: " 바나나" },
+      { english: "banana", korean: "바나나" },
       { english: "apple", korean: "사과" },
       { english: " strawberry", korean: "딸기" },
       { english: "watermellon", korean: "수박" },
@@ -695,6 +695,15 @@ const DEFAULT_KEYWORDS: KeywordList[] = [
       { english: "one coffee", korean: "커피 하나 잔" },
       { english: "two cake", korean: "케이크 둘 개" },
       { english: "three water", korean: "물 셋 병" },
+    ],
+  },
+    {
+    id: "itemswithcounter2",
+    name: "itemswithcounter2",
+    options: [
+      { english: "one banana", korean: "바나나 하나 개" },
+      { english: "two apple", korean: "사과 둘 개" },
+      { english: "three cola", korean: "콜라 셋 병" },
     ],
   },
   {
