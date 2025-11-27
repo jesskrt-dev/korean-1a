@@ -170,7 +170,7 @@ const DEFAULT_SENTENCES: SentencePair[] = [
   {
     id: "1762822536973",
     english: "That (over there) is a [p = objectsubjectparticle.selectOne]",
-    korean: "저것은[p = objectsubjectparticle.selectOne]",
+    korean: "저것은 [p = objectsubjectparticle.selectOne]",
   },
   {
     id: "1762754538641",
@@ -373,6 +373,55 @@ const DEFAULT_SENTENCES: SentencePair[] = [
     showHint: true,
   },
   {
+      id: "1762914097545",
+    english: "Where is [p = name.selectOne]?",
+    korean: "[p = name.selectOne]가 어디예 있어요?",
+    hint: "",
+    showHint: true,
+  },
+  {
+      id: "1762914097645",
+    english: "Who is at the [p = places.selectOne]?",
+    korean: "[p = places.selectOne]에 누가 있나요?",
+    hint: "",
+    showHint: true,
+  },
+  {
+      id: "1762924097645",
+    english: "[p = name.selectOne] is at the [p = places.selectOne]",
+    korean: "p = name.selectOne][p = places.selectOne]예 있어요",
+    hint: "",
+    showHint: true,
+  },
+  {
+      id: "17654924097645",
+    english: "What floor is the [p = placesmarker.selectOne]?",
+    korean: "[p = placesmarker.selectOne]몇 층예 있어요?",
+    hint: "",
+    showHint: true,
+  },
+  {
+      id: "1762724097645",
+    english: "The [p = placesmarker.selectOne] is on the floor",
+    korean: "[p = sinonumber.selectOne] 층예 있어요",
+    hint: "",
+    showHint: true,
+  },
+  {
+      id: "17482724097645",
+    english: "The [p = places.selectOne] is near the [p = placesmarker.selectOne]",
+    korean: "[p = places.selectOne] 근처에 [p = placesmarker.selectOne] 있어요",
+    hint: "",
+    showHint: true,
+  },
+  {
+      id: "17482724097645",
+    english: "What is near the [p = places.selectOne]?",
+    korean: "[p = places.selectOne] 근처에 뭐가 있어요?",
+    hint: "",
+    showHint: true,
+  },
+  {
     id: "1762922372789",
     english: "I [p = frequency.selectOne] drink [p = liquidobjectmarker.selectOne]",
     korean: "[p = liquidobjectmarker.selectOne] [p = frequency.selectOne] 마셔요",
@@ -431,7 +480,7 @@ const DEFAULT_KEYWORDS: KeywordList[] = [
       { english: "Jessica", korean: "제시카" },
       { english: "Jane", korean: "제인이" },
       { english: "Rebecca", korean: "레베카" },
-      { english: "Mauve", korean: "메이브" },
+      { english: "Maeve", korean: "메이브" },
     ],
   },
   {
@@ -644,7 +693,7 @@ const DEFAULT_KEYWORDS: KeywordList[] = [
       { english: "book ", korean: "책" },
       { english: "bed ", korean: "침대" },
       { english: "glasses", korean: "안경" },
-      { english: "shoes", korean: "구두" },
+      { english: "shoe", korean: "구두" },
     ],
   },
   {
@@ -763,6 +812,16 @@ const DEFAULT_KEYWORDS: KeywordList[] = [
       { english: "sometimes", korean: "각끔" },
       { english: "rarely", korean: "거의 안" },
       { english: "never", korean: "절대 안" },
+    ],
+  },
+    {
+    id: "placesmarker",
+    name: "placesmarker",
+    options: [
+      { english: "school", korean: "학교가" },
+      { english: "Restaurant ", korean: "식당이" },
+      { english: "pub", korean: "술집이" },
+      { english: "internet cafe ", korean: "피시방이" },
     ],
   },
 ];
